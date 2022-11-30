@@ -9,7 +9,7 @@
 - usability тестирование
 - тестирование GUI
 
-Составлены следующие виды тестовой документации:
+Составлены следующие виды тестовой [документации](https://github.com/YulyaGreshnova/TestingMobile/blob/main/TestDocumentations_Mobile.xlsx):
 - test plan
 - test-suits
 - test cases
