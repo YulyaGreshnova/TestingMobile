@@ -16,6 +16,6 @@
 - check lists
 - bug reports
 - traceability matrix
-- test report
+- подведены итоги тестирования
 
 Стек технологий: Charles, Proxyman, Xcode, Swift
