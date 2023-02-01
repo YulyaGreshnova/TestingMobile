@@ -9,7 +9,7 @@
 - usability тестирование
 - тестирование GUI
 
-Составлены следующие виды тестовой [документации](https://github.com/YulyaGreshnova/TestingMobile/blob/main/TestDocumentations_Mobile.xlsx):
+Составлены следующие виды тестовой [документации](https://github.com/YulyaGreshnova/TestingMobile/blob/main/TestDocumentations_Mobile_new.xlsx):
 - test plan
 - test-suits
 - test cases
@@ -18,4 +18,4 @@
 - traceability matrix
 - подведены итоги тестирования
 
-Стек технологий: Charles, Proxyman, Xcode, Swift
+Стек технологий: Charles, Proxyman, Xcode, Swift, Postman - [ссылка]() на коллекцию запросов и окружение
