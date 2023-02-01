@@ -18,4 +18,4 @@
 - traceability matrix
 - подведены итоги тестирования
 
-Стек технологий: Charles, Proxyman, Xcode, Swift, Postman - [ссылка](https://www.getpostman.com/collections/4ead2528db17b93b91cd) на коллекцию запросов
+Стек технологий: Charles, Proxyman, Xcode, Swift, Postman - [ссылка]() на коллекцию запросов и окружение
