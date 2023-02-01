@@ -1,0 +1,1418 @@
+{
+	"info": {
+		"_postman_id": "bcacea0b-a4c7-85cd-f591-6ba7aa2ab5fd",
+		"name": "TodoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24398163"
+	},
+	"item": [
+		{
+			"name": "Positive tests",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Adding a new task",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"content\": \"Buy Milk\", \"project_id\": \"2203306141\"}"
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update a task",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"content\": \"Buy Coffee\"}"
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430215314",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430215314"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Close a task",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430215314/close",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430215314",
+										"close"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reopen a task",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430215314/reopen",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430215314",
+										"reopen"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get active tasks",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks ",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks "
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an active task",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430709664",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430709664"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete a task",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430215314",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430215314"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Negative tests",
+			"item": [
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "Incorrect id",
+							"item": [
+								{
+									"name": "Reopen a task with incorrect id",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/0/reopen",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"0",
+												"reopen"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Close a task with incorrect id",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/0/close",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"0",
+												"close"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update a task with incorrect id",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": \"Buy Coffee\"}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/0",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"0"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Incorrect token",
+							"item": [
+								{
+									"name": "Adding a new task with incorrect token",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c6204"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": \"Buy Milk\", \"project_id\": \"2203306141\"}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update a task with incorrect token",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": \"Buy Coffee\"}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6430215314",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6430215314"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Close a task with incorrect token",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6430215314/close",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6430215314",
+												"close"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Reopen a task with incorrect token",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6430215314/reopen",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6430215314",
+												"reopen"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Missing token",
+							"item": [
+								{
+									"name": "Adding a new task with missing token",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": \"Buy Milk\", \"project_id\": \"2203306141\"}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Update a task with missing token",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": \"Buy Coffee\"}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6430215314",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6430215314"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Close a task with missing token",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6430215314/close",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6430215314",
+												"close"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Reopen a task with missing token",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6430215314/reopen",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6430215314",
+												"reopen"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Incorrect body request",
+							"item": [
+								{
+									"name": "Update a task with incorrect body request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": 2}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6433202212",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6433202212"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Adding a new task with incorrect body request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": 2, \"project_id\": \"2203306141\"}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Adding a new task only with a space in the request body",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"content\": \" \"}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Adding a new task with missing required argument in body request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\"priority\": 4}"
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Missing body request",
+							"item": [
+								{
+									"name": "Update a task without body request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks/6430215314",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks",
+												"6430215314"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Adding a new task without body request",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "https://api.todoist.com/rest/v2/tasks",
+											"protocol": "https",
+											"host": [
+												"api",
+												"todoist",
+												"com"
+											],
+											"path": [
+												"rest",
+												"v2",
+												"tasks"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get an active task with  incorrect id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/0",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get active tasks with incorrect token",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c6204"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks ",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks "
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an active task with incorrect token",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c6204"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430709664",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430709664"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get active tasks with missing token",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks ",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks "
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get an active task with missing token",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430709664",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430709664"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete a task with incorrect id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/0",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a task with incorrect token",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer 497893229f75c99c6204942"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430215314",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430215314"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete a task with missing token",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://api.todoist.com/rest/v2/tasks/6430215314",
+									"protocol": "https",
+									"host": [
+										"api",
+										"todoist",
+										"com"
+									],
+									"path": [
+										"rest",
+										"v2",
+										"tasks",
+										"6430215314"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "LC Task",
+			"item": [
+				{
+					"name": "Adding a new task",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Your test name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"taskID\", jsonData.id)",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"content\": \"Buy Milk\", \"project_id\": \"2203306141\"}"
+						},
+						"url": {
+							"raw": "https://api.todoist.com/rest/v2/tasks",
+							"protocol": "https",
+							"host": [
+								"api",
+								"todoist",
+								"com"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an active task",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Varification of status code\", function () {",
+									"    if (pm.environment.get(\"taskID\")) {",
+									"        pm.response.to.have.status(200);",
+									"      ",
+									"    } else {",
+									"        pm.response.to.have.status(404);",
+									"        postman.setNextRequest(null)",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://api.todoist.com/rest/v2/tasks/{{taskID}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"todoist",
+								"com"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"tasks",
+								"{{taskID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a task",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Check task content\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.content).to.eql(\"Buy Coffee\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"content\": \"Buy Coffee\"}"
+						},
+						"url": {
+							"raw": "https://api.todoist.com/rest/v2/tasks/{{taskID}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"todoist",
+								"com"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"tasks",
+								"{{taskID}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Close a task",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://api.todoist.com/rest/v2/tasks/{{taskID}}/close",
+							"protocol": "https",
+							"host": [
+								"api",
+								"todoist",
+								"com"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"tasks",
+								"{{taskID}}",
+								"close"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reopen a task",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://api.todoist.com/rest/v2/tasks/{{taskID}}/reopen",
+							"protocol": "https",
+							"host": [
+								"api",
+								"todoist",
+								"com"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"tasks",
+								"{{taskID}}",
+								"reopen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a task",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});",
+									"pm.environment.set(\"taskID\", null);",
+									"postman.setNextRequest(\"Get an active task\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 497893229f75c99c62049424a587e7345482c0be"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://api.todoist.com/rest/v2/tasks/{{taskID}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"todoist",
+								"com"
+							],
+							"path": [
+								"rest",
+								"v2",
+								"tasks",
+								"{{taskID}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
